@@ -1,0 +1,53 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081000: call_start_cpu1 at /home/danish/esp/esp-idf/components/esp_system/port/cpu_start.c:190
+[0m
+[0;33m--- 0x400d0ea4: __esp_system_init_fn_init_efuse_check at /home/danish/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:34
+[0m
+[0;33m--- 0x400d0fcc: __esp_system_init_fn_init_show_cpu_freq at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:59
+[0m
+[0;33m--- 0x400d0de4: __esp_system_init_fn_init_show_app_info at /home/danish/esp/esp-idf/components/esp_app_format/esp_app_desc.c:110
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 87c71a0ef3daca5e8328e4cd8f8ffe31ab6bbc5dcb3251402c30f5dca8ee230c[0m
+[0;33m--- 0x400d0eb8: __esp_system_init_fn_init_efuse_show_app_info at /home/danish/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:43
+[0m
+[0;33m--- 0x400d2758: __esp_system_init_fn_init_heap at /home/danish/esp/esp-idf/components/heap/heap_caps_init.c:28
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/danish/esp/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/danish/esp/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m--- 0x400d39d8: esp_timer_impl_init_system_time at /home/danish/esp/esp-idf/components/esp_timer/src/system_time.c:51 (discriminator 2)
+[0m
+[0;33m--- 0x400d34fc: __esp_system_init_fn_init_newlib at /home/danish/esp/esp-idf/components/newlib/newlib_init.c:165
+[0m
+[0;33m--- 0x400d1010: __esp_system_init_fn_init_brownout at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:78
+[0m
+[0;33m--- 0x400d101c: __esp_system_init_fn_init_newlib_time at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:84
+[0m
+[0;33m--- 0x400d4b08: uart_pattern_queue_update at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart.c:539
+[0m
+[0;33m--- 0x400d54bc: translate_path at /home/danish/esp/esp-idf/components/vfs/vfs.c:358
+[0m
+[0;33m--- 0x400d3568: __esp_system_init_fn_init_newlib_stdio at /home/danish/esp/esp-idf/components/newlib/newlib_init.c:209
+[0m
+[0;33m--- 0x400d3908: vPortEnterCritical at /home/danish/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:567
+ (inlined by) pthread_key_create at /home/danish/esp/esp-idf/components/pthread/pthread_local_storage.c:62
+[0m
+[0;33m--- 0x400d1028: __esp_system_init_fn_init_flash at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:94
+[0m
+[0;33m--- 0x400d0f44: __esp_system_init_fn_init_efuse at /home/danish/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:144
+[0m
+[0;33m--- 0x400850f0: enable_timer_group0_for_calibration at /home/danish/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c:197
+[0m
+[0;33m--- 0x400d1fc8: esp_ipc_init at /home/danish/esp/esp-idf/components/esp_system/esp_ipc.c:114
+[0m
+[0;33m--- 0x400d15cc: esp_reset_reason_init at /home/danish/esp/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c:61
+[0m
+[0;33m--- 0x400d104c: __esp_system_init_fn_init_disable_rtc_wdt at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:144
+[0m
+[0m

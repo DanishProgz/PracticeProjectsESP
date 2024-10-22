@@ -1,0 +1,161 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 21 2024 18:11:18[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0962ch ( 38444) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00019654 vaddr=3ffb0000 size=02380h (  9088) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b9dc vaddr=40080000 size=0463ch ( 17980) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1387ch ( 79996) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=000338a4 vaddr=4008463c size=08484h ( 33924) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+D (191) cpu_start: Pro cpu up[0m
+D (191) cpu_start: Starting app cpu, entry point is 0x40081000[0m
+D (0) cpu_start: App cpu up[0m
+D (202) clk: RTC_SLOW_CLK calibration value: 3287027[0m
+D (214) cpu_start: calling init function: 0x400d0ea4 on core: 0[0m
+D (214) cpu_start: calling init function: 0x400d0fcc on core: 0[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+D (226) cpu_start: calling init function: 0x400d0de4 on core: 0[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (237) app_init: Project name:     app-template[0m
+[0;32mI (242) app_init: App version:      1[0m
+[0;32mI (247) app_init: Compile time:     Oct 21 2024 18:11:15[0m
+[0;32mI (253) app_init: ELF file SHA256:  278630aad...[0m
+[0;32mI (258) app_init: ESP-IDF:          v5.3.1[0m
+D (263) cpu_start: calling init function: 0x400d0eb8 on core: 0[0m
+[0;32mI (269) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (273) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (278) efuse_init: Chip rev:         v3.1[0m
+D (283) cpu_start: calling init function: 0x400d2758 on core: 0[0m
+D (289) memory_layout: Checking 9 reserved memory ranges:[0m
+D (295) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (301) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (307) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb2c48[0m
+D (314) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (320) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (327) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (333) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (340) memory_layout: Reserved memory range 0x40080000 - 0x4008cac0[0m
+D (346) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (352) memory_layout: Building list of available memory regions:[0m
+D (359) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (365) memory_layout: Available memory region 0x3ffb2c48 - 0x3ffb8000[0m
+D (372) memory_layout: Available memory region 0x3ffb8000 - 0x3ffc0000[0m
+D (378) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (385) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (392) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (398) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (405) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (411) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (418) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (425) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (431) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (438) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (444) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (451) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (458) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (464) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (471) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (477) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (484) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (491) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (497) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (504) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (510) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (517) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (524) memory_layout: Available memory region 0x4008cac0 - 0x4008e000[0m
+D (530) memory_layout: Available memory region 0x4008e000 - 0x40090000[0m
+D (537) memory_layout: Available memory region 0x40090000 - 0x40092000[0m
+D (543) memory_layout: Available memory region 0x40092000 - 0x40094000[0m
+D (550) memory_layout: Available memory region 0x40094000 - 0x40096000[0m
+D (557) memory_layout: Available memory region 0x40096000 - 0x40098000[0m
+D (563) memory_layout: Available memory region 0x40098000 - 0x4009a000[0m
+D (570) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (576) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (583) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (597) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (602) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (608) heap_init: New heap initialised at 0x3ffb2c48[0m
+[0;32mI (613) heap_init: At 3FFB2C48 len 0002D3B8 (180 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (632) heap_init: New heap initialised at 0x4008cac0[0m
+[0;32mI (637) heap_init: At 4008CAC0 len 00013540 (77 KiB): IRAM[0m
+D (643) cpu_start: calling init function: 0x400d39d8 on core: 0[0m
+D (649) cpu_start: calling init function: 0x400d34fc on core: 0[0m
+D (655) cpu_start: calling init function: 0x400d1010 on core: 0[0m
+D (662) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (666) cpu_start: calling init function: 0x400d101c on core: 0[0m
+D (672) cpu_start: calling init function: 0x400d4b08 on core: 0[0m
+D (678) cpu_start: calling init function: 0x400d54bc on core: 0[0m
+D (684) cpu_start: calling init function: 0x400d3568 on core: 0[0m
+D (691) cpu_start: calling init function: 0x400d3908 on core: 0[0m
+D (696) cpu_start: calling init function: 0x400d1028 on core: 0[0m
+D (703) spi_flash: trying chip: issi[0m
+D (706) spi_flash: trying chip: gd[0m
+D (709) spi_flash: trying chip: mxic[0m
+D (713) spi_flash: trying chip: winbond[0m
+D (717) spi_flash: trying chip: generic[0m
+[0;32mI (721) spi_flash: detected chip: generic[0m
+[0;32mI (726) spi_flash: flash io: dio[0m
+[0;33mW (730) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (743) cpu_start: calling init function: 0x400d0f44 on core: 0[0m
+D (749) cpu_start: calling init function: 0x400850f0[0m
+D (754) cpu_start: calling init function: 0x400d1fc8[0m
+D (759) cpu_start: calling init function: 0x400d15cc[0m
+D (764) cpu_start: calling init function: 0x400d104c on core: 0[0m
+D (770) intr_alloc: Connected src 24 to int 2 (cpu 0)[0m
+D (775) app_start: Starting scheduler on CPU0[0m
+[0;32mD (779) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (779) app_start: Starting scheduler on CPU1[0m
+[0;32mI (779) main_task: Started on CPU0[0m[0m
+D (799) heap_init: New heap initialised at 0x3ffe0440[0m
+D (799) heap_init: New heap initialised at 0x3ffe4350[0m
+D (799) intr_alloc: Connected src 16 to int 3 (cpu 0)[0m
+[0;32mI (799) main_task: Calling app_main()[0m
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!
+Hello from app_main!

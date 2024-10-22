@@ -1,0 +1,112 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081000: call_start_cpu1 at /home/danish/esp/esp-idf/components/esp_system/port/cpu_start.c:190
+[0m
+[0;33m--- 0x400d0e9c: __esp_system_init_fn_init_efuse_check at /home/danish/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:31
+[0m
+[0;33m--- 0x400d0fc4: __esp_system_init_fn_init_show_cpu_freq at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:58
+[0m
+[0;33m--- 0x400d0ddc: __esp_system_init_fn_init_show_app_info at /home/danish/esp/esp-idf/components/esp_app_format/esp_app_desc.c:104
+[0m
+[0;33m--- 0x400d0eb0: __esp_system_init_fn_init_efuse_show_app_info at /home/danish/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:41
+[0m
+[0;33m--- 0x400d2750: __esp_system_init_fn_init_heap at /home/danish/esp/esp-idf/components/heap/heap_caps_init.c:25
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/danish/esp/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40080000: _WindowOverflow4 at /home/danish/esp/esp-idf/components/xtensa/xtensa_vectors.S:2027
+[0m
+[0;33m--- 0x40000000: _WindowOverflow4 in ROM
+[0m
+[0;33m--- 0x400d3994: __esp_system_init_fn_esp_timer_init_nonos at /home/danish/esp/esp-idf/components/esp_timer/src/esp_timer_init.c:28
+[0m
+[0;33m--- 0x400d34f4: __esp_system_init_fn_init_newlib at /home/danish/esp/esp-idf/components/newlib/newlib_init.c:162
+[0m
+[0;33m--- 0x400d1008: __esp_system_init_fn_init_brownout at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:67
+[0m
+[0;33m--- 0x400d1014: __esp_system_init_fn_init_newlib_time at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:81
+[0m
+[0;33m--- 0x400d4ac4: __esp_system_init_fn_init_vfs_uart at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:1080
+[0m
+[0;33m--- 0x400d5478: __esp_system_init_fn_init_vfs_console at /home/danish/esp/esp-idf/components/esp_vfs_console/vfs_console.c:222
+[0m
+[0;33m--- 0x400d3560: __esp_system_init_fn_init_newlib_stdio at /home/danish/esp/esp-idf/components/newlib/newlib_init.c:207
+[0m
+[0;33m--- 0x400d38c4: __esp_system_init_fn_init_pthread at /home/danish/esp/esp-idf/components/pthread/pthread.c:76
+[0m
+[0;33m--- 0x400d1020: __esp_system_init_fn_init_flash at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:88
+[0m
+[0;33m--- 0x400d0f3c: __esp_system_init_fn_init_efuse at /home/danish/esp/esp-idf/components/efuse/src/esp_efuse_startup.c:137
+[0m
+[0;33m--- 0x400850f0: enable_timer_group0_for_calibration at /home/danish/esp/esp-idf/components/esp_hw_support/port/esp32/rtc_time.c:197
+[0m
+[0;33m--- 0x400d1fc0: esp_ipc_init at /home/danish/esp/esp-idf/components/esp_system/esp_ipc.c:113
+[0m
+[0;33m--- 0x400d15c4: esp_reset_reason_init at /home/danish/esp/esp-idf/components/esp_system/port/soc/esp32/reset_reason.c:60
+[0m
+[0;33m--- 0x400d1044: __esp_system_init_fn_init_disable_rtc_wdt at /home/danish/esp/esp-idf/components/esp_system/startup_funcs.c:143
+[0m
+[0;33m--- 0x400d6ee3: task_wdt_timeout_handling at /home/danish/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x400d72a8: task_wdt_isr at /home/danish/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40082db9: _xt_lowint1 at /home/danish/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d42bd: uart_ll_get_txfifo_len at /home/danish/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d4a7f: uart_write at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+0x400d5805: esp_vfs_write at /home/danish/esp/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d5371: console_write at /home/danish/esp/esp-idf/components/esp_vfs_console/vfs_console.c:67
+0x400d5805: esp_vfs_write at /home/danish/esp/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d82dd: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400dc197: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dbb75: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400d8385: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3751: esp_log_writev at /home/danish/esp/esp-idf/components/log/log.c:210
+0x4008b215: esp_log_write at /home/danish/esp/esp-idf/components/log/log.c:220
+0x400d5f51: app_main at /home/danish/workspace/Simple_LogPrint/main/main.c:10 (discriminator 1)
+0x400e2f38: main_task at /home/danish/esp/esp-idf/components/freertos/app_startup.c:208
+0x40085e65: vPortTaskWrapper at /home/danish/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400d6ee3: task_wdt_timeout_handling at /home/danish/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x400d72a8: task_wdt_isr at /home/danish/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40082db9: _xt_lowint1 at /home/danish/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d42c7: uart_ll_get_txfifo_len at /home/danish/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d4a7f: uart_write at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+0x400d5805: esp_vfs_write at /home/danish/esp/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d5371: console_write at /home/danish/esp/esp-idf/components/esp_vfs_console/vfs_console.c:67
+0x400d5805: esp_vfs_write at /home/danish/esp/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000117d: __swrite in ROM
+0x400592fe: __sflush_r in ROM
+0x4005937a: _fflush_r in ROM
+0x400d82dd: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400dc197: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x400dbb75: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x400d8385: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e3751: esp_log_writev at /home/danish/esp/esp-idf/components/log/log.c:210
+0x4008b215: esp_log_write at /home/danish/esp/esp-idf/components/log/log.c:220
+0x400d5f51: app_main at /home/danish/workspace/Simple_LogPrint/main/main.c:10 (discriminator 1)
+0x400e2f38: main_task at /home/danish/esp/esp-idf/components/freertos/app_startup.c:208
+0x40085e65: vPortTaskWrapper at /home/danish/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m--- 0x400d6ee3: task_wdt_timeout_handling at /home/danish/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:434
+0x400d72a8: task_wdt_isr at /home/danish/esp/esp-idf/components/esp_system/task_wdt/task_wdt.c:507
+0x40082db9: _xt_lowint1 at /home/danish/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x400d42b8: uart_ll_get_txfifo_len at /home/danish/esp/esp-idf/components/hal/esp32/include/hal/uart_ll.h:408
+ (inlined by) uart_tx_char at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:170
+0x400d4a7f: uart_write at /home/danish/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:223
+0x400d5805: esp_vfs_write at /home/danish/esp/esp-idf/components/vfs/vfs.c:502 (discriminator 4)
+0x4000bd83: _write_r in ROM
+0x4000182a: write in ROM
+0x400d

@@ -1,0 +1,121 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 21 2024 18:22:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a61ch ( 42524) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a644 vaddr=3ffb0000 size=02440h (  9280) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001ca8c vaddr=40080000 size=0358ch ( 13708) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=183f8h ( 99320) map[0m
+[0;32mI (167) esp_image: segment 4: paddr=00038420 vaddr=4008358c size=09610h ( 38416) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (189) boot: Disabling RNG early entropy source...[0m
+V (201) mmap: after coalescing, 3 regions are left[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+D (201) cpu_start: Pro cpu up[0m
+D (203) cpu_start: Starting app cpu, entry point is 0x4008101c[0m
+D (0) cpu_start: App cpu up[0m
+D (217) clk: RTC_SLOW_CLK calibration value: 3296013[0m
+D (229) cpu_start: calling init function: 0x400d1064 on core: 0[0m
+D (229) cpu_start: calling init function: 0x400d118c on core: 0[0m
+[0;32mI (231) cpu_start: Pro cpu start user code[0m
+[0;32mI (236) cpu_start: cpu freq: 160000000 Hz[0m
+D (241) cpu_start: calling init function: 0x400d0fa4 on core: 0[0m
+[0;32mI (247) app_init: Application information:[0m
+[0;32mI (252) app_init: Project name:     blink[0m
+[0;32mI (256) app_init: App version:      1[0m
+[0;32mI (261) app_init: Compile time:     Oct 21 2024 18:21:57[0m
+[0;32mI (267) app_init: ELF file SHA256:  60559db5b...[0m
+[0;32mI (272) app_init: ESP-IDF:          v5.3.1[0m
+D (277) cpu_start: calling init function: 0x400d1078 on core: 0[0m
+[0;32mI (283) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (287) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (292) efuse_init: Chip rev:         v3.1[0m
+D (297) cpu_start: calling init function: 0x400d2918 on core: 0[0m
+V (303) memory_layout: reserved range is 0x3f40a574 - 0x3f40a5bc[0m
+D (309) memory_layout: Checking 9 reserved memory ranges:[0m
+D (315) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (321) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (328) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb2d08[0m
+D (334) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (340) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (347) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (353) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (360) memory_layout: Reserved memory range 0x40080000 - 0x4008cb9c[0m
+D (366) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (373) memory_layout: Building list of available memory regions:[0m
+V (379) memory_layout: Examining memory region 0x3ffae000 - 0x3ffb0000[0m
+V (385) memory_layout: Start of region 0x3ffae000 - 0x3ffb0000 overlaps reserved 0x3ffae000 - 0x3ffae6e0[0m
+D (395) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+V (401) memory_layout: Examining memory region 0x3ffb0000 - 0x3ffb8000[0m
+V (408) memory_layout: Start of region 0x3ffb0000 - 0x3ffb8000 overlaps reserved 0x3ffb0000 - 0x3ffb2d08[0m
+D (418) memory_layout: Available memory region 0x3ffb2d08 - 0x3ffb8000[0m
+V (424) memory_layout: Examining memory region 0x3ffb8000 - 0x3ffc0000[0m
+D (431) memory_layout: Available memory region 0x3ffb8000 - 0x3ffc0000[0m
+V (437) memory_layout: Examining memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (444) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+V (451) memory_layout: Examining memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (457) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+V (464) memory_layout: Examining memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (470) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+V (477) memory_layout: Examining memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (484) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+V (490) memory_layout: Examining memory region 0x3ffc8000 - 0x3ffca000[0m
+D (497) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+V (503) memory_layout: Examining memory region 0x3ffca000 - 0x3ffcc000[0m
+D (510) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+V (517) memory_layout: Examining memory region 0x3ffcc000 - 0x3ffce000[0m
+D (523) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+V (530) memory_layout: Examining memory region 0x3ffce000 - 0x3ffd0000[0m
+D (536) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+V (543) memory_layout: Examining memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (550) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+V (556) memory_layout: Examining memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (563) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+V (569) memory_layout: Examining memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (576) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+V (582) memory_layout: Examining memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (589) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+V (596) memory_layout: Examining memory region 0x3ffd8000 - 0x3ffda000[0m
+D (602) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+V (609) memory_layout: Examining memory region 0x3ffda000 - 0x3ffdc000[0m
+D (615) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+V (622) memory_layout: Examining memory region 0x3ffdc000 - 0x3ffde000[0m
+D (629) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+V (635) memory_layout: Examining memory region 0x3ffde000 - 0x3ffe0000[0m
+D (642) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+V (648) memory_layout: Examining memory region 0x3ffe0000 - 0x3ffe4000[0m
+V (655) memory_layout: Start of region 0x3ffe0000 - 0x3ffe4000 overlaps reserved 0x3ffe0000 - 0x3ffe0440[0m
+V (665) memory_layout: End of region 0x3ffe0440 - 0x3ffe4000 overlaps reserved 0x3ffe3f20 - 0x3ffe4350[0m
+D (674) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+V (681) memory_layout: Examining memory region 0x3ffe4000 - 0x3ffe8000[0m
+V (687) memory_layout: Start of region 0x3ffe4000 - 0x3ffe8000 overlaps reserved 0x3ffe3f20 - 0x3ffe4350[0m
+D (697) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+V (703) memory_layout: Examining memory region 0x3ffe8000 - 0x3fff0000[0m
+D (710) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+V (717) memory_layout: Examining memory region 0x3fff0000 - 0x3fff8000[0m
+D (723) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+V (730) memory_layout: Examining memory region 0x3fff8000 - 0x3fffc000[0m
+D (736) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+V (743) memory_layout: Examining m

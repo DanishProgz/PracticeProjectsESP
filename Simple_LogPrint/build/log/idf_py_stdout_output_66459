@@ -1,0 +1,525 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 21 2024 18:17:25[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09634h ( 38452) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=0001965c vaddr=3ffb0000 size=02380h (  9088) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b9e4 vaddr=40080000 size=04634h ( 17972) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=137d0h ( 79824) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=000337f8 vaddr=40084634 size=0848ch ( 33932) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+D (191) cpu_start: Pro cpu up[0m
+D (191) cpu_start: Starting app cpu, entry point is 0x40081000[0m
+D (0) cpu_start: App cpu up[0m
+D (202) clk: RTC_SLOW_CLK calibration value: 3293862[0m
+D (214) cpu_start: calling init function: 0x400d0e9c on core: 0[0m
+D (214) cpu_start: calling init function: 0x400d0fc4 on core: 0[0m
+[0;32mI (217) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+D (226) cpu_start: calling init function: 0x400d0ddc on core: 0[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (237) app_init: Project name:     app-template[0m
+[0;32mI (242) app_init: App version:      1[0m
+[0;32mI (247) app_init: Compile time:     Oct 21 2024 18:19:31[0m
+[0;32mI (253) app_init: ELF file SHA256:  5ddfd2b21...[0m
+[0;32mI (258) app_init: ESP-IDF:          v5.3.1[0m
+D (263) cpu_start: calling init function: 0x400d0eb0 on core: 0[0m
+[0;32mI (269) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (273) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (278) efuse_init: Chip rev:         v3.1[0m
+D (283) cpu_start: calling init function: 0x400d2750 on core: 0[0m
+D (289) memory_layout: Checking 9 reserved memory ranges:[0m
+D (295) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (301) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (307) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb2c48[0m
+D (314) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (320) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (327) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (333) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (340) memory_layout: Reserved memory range 0x40080000 - 0x4008cac0[0m
+D (346) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (352) memory_layout: Building list of available memory regions:[0m
+D (359) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (365) memory_layout: Available memory region 0x3ffb2c48 - 0x3ffb8000[0m
+D (372) memory_layout: Available memory region 0x3ffb8000 - 0x3ffc0000[0m
+D (378) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (385) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (392) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (398) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (405) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (411) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (418) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (425) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (431) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (438) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (444) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (451) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (458) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (464) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (471) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (477) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (484) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (491) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (497) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (504) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (510) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (517) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (523) memory_layout: Available memory region 0x4008cac0 - 0x4008e000[0m
+D (530) memory_layout: Available memory region 0x4008e000 - 0x40090000[0m
+D (537) memory_layout: Available memory region 0x40090000 - 0x40092000[0m
+D (543) memory_layout: Available memory region 0x40092000 - 0x40094000[0m
+D (550) memory_layout: Available memory region 0x40094000 - 0x40096000[0m
+D (556) memory_layout: Available memory region 0x40096000 - 0x40098000[0m
+D (563) memory_layout: Available memory region 0x40098000 - 0x4009a000[0m
+D (570) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (576) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (583) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (597) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (602) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (608) heap_init: New heap initialised at 0x3ffb2c48[0m
+[0;32mI (613) heap_init: At 3FFB2C48 len 0002D3B8 (180 KiB): DRAM[0m
+[0;32mI (619) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (626) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (632) heap_init: New heap initialised at 0x4008cac0[0m
+[0;32mI (637) heap_init: At 4008CAC0 len 00013540 (77 KiB): IRAM[0m
+D (643) cpu_start: calling init function: 0x400d3994 on core: 0[0m
+D (649) cpu_start: calling init function: 0x400d34f4 on core: 0[0m
+D (655) cpu_start: calling init function: 0x400d1008 on core: 0[0m
+D (662) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (666) cpu_start: calling init function: 0x400d1014 on core: 0[0m
+D (672) cpu_start: calling init function: 0x400d4ac4 on core: 0[0m
+D (678) cpu_start: calling init function: 0x400d5478 on core: 0[0m
+D (684) cpu_start: calling init function: 0x400d3560 on core: 0[0m
+D (691) cpu_start: calling init function: 0x400d38c4 on core: 0[0m
+D (696) cpu_start: calling init function: 0x400d1020 on core: 0[0m
+D (702) spi_flash: trying chip: issi[0m
+D (706) spi_flash: trying chip: gd[0m
+D (709) spi_flash: trying chip: mxic[0m
+D (713) spi_flash: trying chip: winbond[0m
+D (717) spi_flash: trying chip: generic[0m
+[0;32mI (721) spi_flash: detected chip: generic[0m
+[0;32mI (726) spi_flash: flash io: dio[0m
+[0;33mW (730) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (743) cpu_start: calling init function: 0x400d0f3c on core: 0[0m
+D (749) cpu_start: calling init function: 0x400850f0[0m
+D (754) cpu_start: calling init function: 0x400d1fc0[0m
+D (759) cpu_start: calling init function: 0x400d15c4[0m
+D (764) cpu_start: calling init function: 0x400d1044 on core: 0[0m
+D (770) intr_alloc: Connected src 24 to int 2 (cpu 0)[0m
+D (775) app_start: Starting scheduler on CPU0[0m
+[0;32D (779) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (779) app_start: Starting scheduler on CPU1[0m
+mI (779) main_task: Started on CPU0[0m
+D (799) heap_init: New heap initialised at 0x3ffe0440[0m
+D (799) heap_init: New heap initialised at 0x3ffe4350[0m
+D (799) intr_alloc: Connected src 16 to int 3 (cpu 0)[0m
+[0;32mI (799) main_task: Calling app_main()[0m
+D (809) LOG: This is a DEbug[0m
+D (1809) LOG: This is a DEbug[0m
+D (2809) LOG: This is a DEbug[0m
+D (3809) LOG: This is a DEbug[0m
+D (4809) LOG: This is a DEbug[0m
+D (5809) LOG: This is a DEbug[0m
+D (6809) LOG: This is a DEbug[0m
+D (7809) LOG: This is a DEbug[0m
+D (8809) LOG: This is a DEbug[0m
+D (9809) LOG: This is a DEbug[0m
+D (10809) LOG: This is a DEbug[0m
+D (11809) LOG: This is a DEbug[0m
+D (12809) LOG: This is a DEbug[0m
+D (13809) LOG: This is a DEbug[0m
+D (14809) LOG: This is a DEbug[0m
+D (15809) LOG: This is a DEbug[0m
+D (16809) LOG: This is a DEbug[0m
+D (17809) LOG: This is a DEbug[0m
+D (18809) LOG: This is a DEbug[0m
+D (19809) LOG: This is a DEbug[0m
+D (20809) LOG: This is a DEbug[0m
+D (21809) LOG: This is a DEbug[0m
+D (22809) LOG: This is a DEbug[0m
+D (23809) LOG: This is a DEbug[0m
+D (24809) LOG: This is a DEbug[0m
+D (25809) LOG: This is a DEbug[0m
+D (26809) LOG: This is a DEbug[0m
+D (27809) LOG: This is a DEbug[0m
+D (28809) LOG: This is a DEbug[0m
+D (29809) LOG: This is a DEbug[0m
+D (30809) LOG: This is a DEbug[0m
+D (31809) LOG: This is a DEbug[0m
+D (32809) LOG: This is a DEbug[0m
+D (33809) LOG: This is a DEbug[0m
+D (34809) LOG: This is a DEbug[0m
+D (35809) LOG: This is a DEbug[0m
+D (36809) LOG: This is a DEbug[0m
+D (37809) LOG: This is a DEbug[0m
+D (38809) LOG: This is a DEbug[0m
+D (39809) LOG: This is a DEbug[0m
+D (40809) LOG: This is a DEbug[0m
+D (41809) LOG: This is a DEbug[0m
+D (42809) LOG: This is a DEbug[0m
+D (43809) LOG: This is a DEbug[0m
+D (44809) LOG: This is a DEbug[0m
+D (45809) LOG: This is a DEbug[0m
+D (46809) LOG: This is a DEbug[0m
+D (47809) LOG: This is a DEbug[0m
+D (48809) LOG: This is a DEbug[0m
+D (49809) LOG: This is a DEbug[0m
+D (50809) LOG: This is a DEbug[0m
+D (51809) LOG: This is a DEbug[0m
+D (52809) LOG: This is a DEbug[0m
+D (53809) LOG: This is a DEbug[0m
+D (54809) LOG: This is a DEbug[0m
+D (55809) LOG: This is a DEbug[0m
+D (56809) LOG: This is a DEbug[0m
+D (57809) LOG: This is a DEbug[0m
+D (58809) LOG: This is a DEbug[0m
+D (59809) LOG: This is a DEbug[0m
+D (60809) LOG: This is a DEbug[0m
+D (61809) LOG: This is a DEbug[0m
+D (62809) LOG: This is a DEbug[0m
+D (63809) LOG: This is a DEbug[0m
+D (64809) LOG: This is a DEbug[0m
+D (65809) LOG: This is a DEbug[0m
+D (66809) LOG: This is a DEbug[0m
+D (67809) LOG: This is a DEbug[0m
+D (68809) LOG: This is a DEbug[0m
+D (69809) LOG: This is a DEbug[0m
+D (70809) LOG: This is a DEbug[0m
+D (71809) LOG: This is a DEbug[0m
+D (72809) LOG: This is a DEbug[0m
+D (73809) LOG: This is a DEbug[0m
+D (74809) LOG: This is a DEbug[0m
+D (75809) LOG: This is a DEbug[0m
+D (76809) LOG: This is a DEbug[0m
+D (77809) LOG: This is a DEbug[0m
+D (78809) LOG: This is a DEbug[0m
+D (79809) LOG: This is a DEbug[0m
+D (80809) LOG: This is a DEbug[0m
+D (81809) LOG: This is a DEbug[0m
+D (82809) LOG: This is a DEbug[0m
+D (83809) LOG: This is a DEbug[0m
+D (84809) LOG: This is a DEbug[0m
+D (85809) LOG: This is a DEbug[0m
+D (86809) LOG: This is a DEbug[0m
+D (87809) LOG: This is a DEbug[0m
+D (88809) LOG: This is a DEbug[0m
+D (89809) LOG: This is a DEbug[0m
+D (90809) LOG: This is a DEbug[0m
+D (91809) LOG: This is a DEbug[0m
+D (92809) LOG: This is a DEbug[0m
+D (93809) LOG: This is a DEbug[0m
+D (94809) LOG: This is a DEbug[0m
+D (95809) LOG: This is a DEbug[0m
+D (96809) LOG: This is a DEbug[0m
+D (97809) LOG: This is a DEbug[0m
+D (98809) LOG: This is a DEbug[0m
+D (99809) LOG: This is a DEbug[0m
+D (100809) LOG: This is a DEbug[0m
+D (101809) LOG: This is a DEbug[0m
+D (102809) LOG: This is a DEbug[0m
+D (103809) LOG: This is a DEbug[0m
+D (104809) LOG: This is a DEbug[0m
+D (105809) LOG: This is a DEbug[0m
+D (106809) LOG: This is a DEbug[0m
+D (107809) LOG: This is a DEbug[0m
+D (108809) LOG: This is a DEbug[0m
+D (109809) LOG: This is a DEbug[0m
+D (110809) LOG: This is a DEbug[0m
+D (111809) LOG: This is a DEbug[0m
+D (112809) LOG: This is a DEbug[0m
+D (113809) LOG: This is a DEbug[0m
+D (114809) LOG: This is a DEbug[0m
+D (115809) LOG: This is a DEbug[0m
+D (116809) LOG: This is a DEbug[0m
+D (117809) LOG: This is a DEbug[0m
+D (118809) LOG: This is a DEbug[0m
+D (119809) LOG: This is a DEbug[0m
+D (120809) LOG: This is a DEbug[0m
+D (121809) LOG: This is a DEbug[0m
+D (122809) LOG: This is a DEbug[0m
+D (123809) LOG: This is a DEbug[0m
+D (124809) LOG: This is a DEbug[0m
+D (125809) LOG: This is a DEbug[0m
+D (126809) LOG: This is a DEbug[0m
+D (127809) LOG: This is a DEbug[0m
+D (128809) LOG: This is a DEbug[0m
+D (129809) LOG: This is a DEbug[0m
+D (130809) LOG: This is a DEbug[0m
+D (131809) LOG: This is a DEbug[0m
+D (132809) LOG: This is a DEbug[0m
+D (133809) LOG: This is a DEbug[0m
+D (134809) LOG: This is a DEbug[0m
+D (135809) LOG: This is a DEbug[0m
+D (136809) LOG: This is a DEbug[0m
+D (137809) LOG: This is a DEbug[0m
+D (138809) LOG: This is a DEbug[0m
+D (139809) LOG: This is a DEbug[0m
+D (140809) LOG: This is a DEbug[0m
+D (141809) LOG: This is a DEbug[0m
+D (142809) LOG: This is a DEbug[0m
+D (143809) LOG: This is a DEbug[0m
+D (144809) LOG: This is a DEbug[0m
+D (145809) LOG: This is a DEbug[0m
+D (146809) LOG: This is a DEbug[0m
+D (147809) LOG: This is a DEbug[0m
+D (148809) LOG: This is a DEbug[0m
+D (149809) LOG: This is a DEbug[0m
+D (150809) LOG: This is a DEbug[0m
+D (151809) LOG: This is a DEbug[0m
+D (152809) LOG: This is a DEbug[0m
+D (153809) LOG: This is a DEbug[0m
+D (154809) LOG: This is a DEbug[0m
+D (155809) LOG: This is a DEbug[0m
+D (156809) LOG: This is a DEbug[0m
+D (157809) LOG: This is a DEbug[0m
+D (158809) LOG: This is a DEbug[0m
+D (159809) LOG: This is a DEbug[0m
+D (160809) LOG: This is a DEbug[0m
+D (161809) LOG: This is a DEbug[0m
+D (162809) LOG: This is a DEbug[0m
+D (163809) LOG: This is a DEbug[0m
+D (164809) LOG: This is a DEbug[0m
+D (165809) LOG: This is a DEbug[0m
+D (166809) LOG: This is a DEbug[0m
+D (167809) LOG: This is a DEbug[0m
+D (168809) LOG: This is a DEbug[0m
+D (169809) LOG: This is a DEbug[0m
+D (170809) LOG: This is a DEbug[0m
+D (171809) LOG: This is a DEbug[0m
+D (172809) LOG: This is a DEbug[0m
+D (173809) LOG: This is a DEbug[0m
+D (174809) LOG: This is a DEbug[0m
+D (175809) LOG: This is a DEbug[0m
+D (176809) LOG: This is a DEbug[0m
+D (177809) LOG: This is a DEbug[0m
+D (178809) LOG: This is a DEbug[0m
+D (179809) LOG: This is a DEbug[0m
+D (180809) LOG: This is a DEbug[0m
+D (181809) LOG: This is a DEbug[0m
+D (182809) LOG: This is a DEbug[0m
+D (183809) LOG: This is a DEbug[0m
+D (184809) LOG: This is a DEbug[0m
+D (185809) LOG: This is a DEbug[0m
+D (186809) LOG: This is a DEbug[0m
+D (187809) LOG: This is a DEbug[0m
+D (188809) LOG: This is a DEbug[0m
+D (189809) LOG: This is a DEbug[0m
+D (190809) LOG: This is a DEbug[0m
+D (191809) LOG: This is a DEbug[0m
+D (192809) LOG: This is a DEbug[0m
+D (193809) LOG: This is a DEbug[0m
+D (194809) LOG: This is a DEbug[0m
+D (195809) LOG: This is a DEbug[0m
+D (196809) LOG: This is a DEbug[0m
+D (197809) LOG: This is a DEbug[0m
+D (198809) LOG: This is a DEbug[0m
+D (199809) LOG: This is a DEbug[0m
+D (200809) LOG: This is a DEbug[0m
+D (201809) LOG: This is a DEbug[0m
+D (202809) LOG: This is a DEbug[0m
+D (203809) LOG: This is a DEbug[0m
+D (204809) LOG: This is a DEbug[0m
+D (205809) LOG: This is a DEbug[0m
+D (206809) LOG: This is a DEbug[0m
+D (207809) LOG: This is a DEbug[0m
+D (208809) LOG: This is a DEbug[0m
+D (209809) LOG: This is a DEbug[0m
+D (210809) LOG: This is a DEbug[0m
+D (211809) LOG: This is a DEbug[0m
+D (212809) LOG: This is a DEbug[0m
+D (213809) LOG: This is a DEbug[0m
+D (214809) LOG: This is a DEbug[0m
+D (215809) LOG: This is a DEbug[0m
+D (216809) LOG: This is a DEbug[0m
+D (217809) LOG: This is a DEbug[0m
+D (218809) LOG: This is a DEbug[0m
+D (219809) LOG: This is a DEbug[0m
+D (220809) LOG: This is a DEbug[0m
+D (221809) LOG: This is a DEbug[0m
+D (222809) LOG: This is a DEbug[0m
+D (223809) LOG: This is a DEbug[0m
+D (224809) LOG: This is a DEbug[0m
+D (225809) LOG: This is a DEbug[0m
+D (226809) LOG: This is a DEbug[0m
+D (227809) LOG: This is a DEbug[0m
+D (228809) LOG: This is a DEbug[0m
+D (229809) LOG: This is a DEbug[0m
+D (230809) LOG: This is a DEbug[0m
+D (231809) LOG: This is a DEbug[0m
+D (232809) LOG: This is a DEbug[0m
+D (233809) LOG: This is a DEbug[0m
+D (234809) LOG: This is a DEbug[0m
+D (235809) LOG: This is a DEbug[0m
+D (236809) LOG: This is a DEbug[0m
+D (237809) LOG: This is a DEbug[0m
+D (238809) LOG: This is a DEbug[0m
+D (239809) LOG: This is a DEbug[0m
+D (240809) LOG: This is a DEbug[0m
+D (241809) LOG: This is a DEbug[0m
+D (242809) LOG: This is a DEbug[0m
+D (243809) LOG: This is a DEbug[0m
+D (244809) LOG: This is a DEbug[0m
+D (245809) LOG: This is a DEbug[0m
+D (246809) LOG: This is a DEbug[0m
+D (247809) LOG: This is a DEbug[0m
+D (248809) LOG: This is a DEbug[0m
+D (249809) LOG: This is a DEbug[0m
+D (250809) LOG: This is a DEbug[0m
+D (251809) LOG: This is a DEbug[0m
+D (252809) LOG: This is a DEbug[0m
+D (253809) LOG: This is a DEbug[0m
+D (254809) LOG: This is a DEbug[0m
+D (255809) LOG: This is a DEbug[0m
+D (256809) LOG: This is a DEbug[0m
+D (257809) LOG: This is a DEbug[0m
+D (258809) LOG: This is a DEbug[0m
+D (259809) LOG: This is a DEbug[0m
+D (260809) LOG: This is a DEbug[0m
+D (261809) LOG: This is a DEbug[0m
+D (262809) LOG: This is a DEbug[0m
+D (263809) LOG: This is a DEbug[0m
+D (264809) LOG: This is a DEbug[0m
+D (265809) LOG: This is a DEbug[0m
+D (266809) LOG: This is a DEbug[0m
+D (267809) LOG: This is a DEbug[0m
+D (268809) LOG: This is a DEbug[0m
+D (269809) LOG: This is a DEbug[0m
+D (270809) LOG: This is a DEbug[0m
+D (271809) LOG: This is a DEbug[0m
+D (272809) LOG: This is a DEbug[0m
+D (273809) LOG: This is a DEbug[0m
+D (274809) LOG: This is a DEbug[0m
+D (275809) LOG: This is a DEbug[0m
+D (276809) LOG: This is a DEbug[0m
+D (277809) LOG: This is a DEbug[0m
+D (278809) LOG: This is a DEbug[0m
+D (279809) LOG: This is a DEbug[0m
+D (280809) LOG: This is a DEbug[0m
+D (281809) LOG: This is a DEbug[0m
+D (282809) LOG: This is a DEbug[0m
+D (283809) LOG: This is a DEbug[0m
+D (284809) LOG: This is a DEbug[0m
+D (285809) LOG: This is a DEbug[0m
+D (286809) LOG: This is a DEbug[0m
+D (287809) LOG: This is a DEbug[0m
+D (288809) LOG: This is a DEbug[0m
+D (289809) LOG: This is a DEbug[0m
+D (290809) LOG: This is a DEbug[0m
+D (291809) LOG: This is a DEbug[0m
+D (292809) LOG: This is a DEbug[0m
+D (293809) LOG: This is a DEbug[0m
+D (294809) LOG: This is a DEbug[0m
+D (295809) LOG: This is a DEbug[0m
+D (296809) LOG: This is a DEbug[0m
+D (297809) LOG: This is a DEbug[0m
+D (298809) LOG: This is a DEbug[0m
+D (299809) LOG: This is a DEbug[0m
+D (300809) LOG: This is a DEbug[0m
+D (301809) LOG: This is a DEbug[0m
+D (302809) LOG: This is a DEbug[0m
+D (303809) LOG: This is a DEbug[0m
+D (304809) LOG: This is a DEbug[0m
+D (305809) LOG: This is a DEbug[0m
+D (306809) LOG: This is a DEbug[0m
+D (307809) LOG: This is a DEbug[0m
+D (308809) LOG: This is a DEbug[0m
+D (309809) LOG: This is a DEbug[0m
+D (310809) LOG: This is a DEbug[0m
+D (311809) LOG: This is a DEbug[0m
+D (312809) LOG: This is a DEbug[0m
+D (313809) LOG: This is a DEbug[0m
+D (314809) LOG: This is a DEbug[0m
+D (315809) LOG: This is a DEbug[0m
+D (316809) LOG: This is a DEbug[0m
+D (317809) LOG: This is a DEbug[0m
+D (318809) LOG: This is a DEbug[0m
+D (319809) LOG: This is a DEbug[0m
+D (320809) LOG: This is a DEbug[0m
+D (321809) LOG: This is a DEbug[0m
+D (322809) LOG: This is a DEbug[0m
+D (323809) LOG: This is a DEbug[0m
+D (324809) LOG: This is a DEbug[0m
+D (325809) LOG: This is a DEbug[0m
+D (326809) LOG: This is a DEbug[0m
+D (327809) LOG: This is a DEbug[0m
+D (328809) LOG: This is a DEbug[0m
+D (329809) LOG: This is a DEbug[0m
+D (330809) LOG: This is a DEbug[0m
+D (331809) LOG: This is a DEbug[0m
+D (332809) LOG: This is a DEbug[0m
+D (333809) LOG: This is a DEbug[0m
+D (334809) LOG: This is a DEbug[0m
+D (335809) LOG: This is a DEbug[0m
+D (336809) LOG: This is a DEbug[0m
+D (337809) LOG: This is a DEbug[0m
+D (338809) LOG: This is a DEbug[0m
+D (339809) LOG: This is a DEbug[0m
+D (340809) LOG: This is a DEbug[0m
+D (341809) LOG: This is a DEbug[0m
+D (342809) LOG: This is a DEbug[0m
+D (343809) LOG: This is a DEbug[0m
+D (344809) LOG: This is a DEbug[0m
+D (345809) LOG: This is a DEbug[0m
+D (346809) LOG: This is a DEbug[0m
+D (347809) LOG: This is a DEbug[0m
+D (348809) LOG: This is a DEbug[0m
+D (349809) LOG: This is a DEbug[0m
+D (350809) LOG: This is a DEbug[0m
+D (351809) LOG: This is a DEbug[0m
+D (352809) LOG: This is a DEbug[0m
+D (353809) LOG: This is a DEbug[0m
+D (354809) LOG: This is a DEbug[0m
+D (355809) LOG: This is a DEbug[0m
+D (356809) LOG: This is a DEbug[0m
+D (357809) LOG: This is a DEbug[0m
+D (358809) LOG: This is a DEbug[0m
+D (359809) LOG: This is a DEbug[0m
+D (360809) LOG: This is a DEbug[0m
+D (361809) LOG: This is a DEbug[0m
+D (362809) LOG: This is a DEbug[0m
+D (363809) LOG: This is a DEbug[0m
+D (364809) LOG: This is a DEbug[0m
+D (365809) LOG: This is a DEbug[0m
+D (366809) LOG: This is a DEbug[0m
+D (367809) LOG: This is a DEbug[0m
+D (368809) LOG: This is a DEbug[0m
+D (369809) LOG: This is a DEbug[0m
+D (370809) LOG: This is a DEbug[0m
+D (371809) LOG: This is a DEbug[0m
+D (372809) LOG: This is a DEbug[0m
+D (373809) LOG: This is a DEbug[0m
+D (374809) LOG: This is a DEbug[0m
+D (375809) LOG: This is a DEbug[0m
+D (376809) LOG: This is a DEbug[0m
+D (377809) LOG: This is a DEbug[0m
+D (378809) LOG: This is a DEbug[0m
+D (379809) LOG: This is a DEbug[0m
+D (380809) LOG: This is a DEbug[0m
+D (381809) LOG: This is a DEbug[0m
+D (382809) LOG: This is a DEbug[0m
+D (383809) LOG: This is a DEbug[0m

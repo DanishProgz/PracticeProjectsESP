@@ -1,0 +1,229 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 21 2024 17:45:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09f74h ( 40820) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00019f9c vaddr=3ffb0000 size=023c8h (  9160) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=0001c36c vaddr=40080000 size=03cach ( 15532) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14ab4h ( 84660) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=00034adc vaddr=40083cac size=08e14h ( 36372) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (183) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+D (195) cpu_start: Pro cpu up[0m
+D (195) cpu_start: Starting app cpu, entry point is 0x40081000[0m
+D (0) cpu_start: App cpu up[0m
+D (206) clk: RTC_SLOW_CLK calibration value: 3281882[0m
+D (218) cpu_start: calling init function: 0x400d0fa8 on core: 0[0m
+D (218) cpu_start: calling init function: 0x400d10d0 on core: 0[0m
+[0;32mI (220) cpu_start: Pro cpu start user code[0m
+[0;32mI (225) cpu_start: cpu freq: 160000000 Hz[0m
+D (230) cpu_start: calling init function: 0x400d0ee8 on core: 0[0m
+[0;32mI (236) app_init: Application information:[0m
+[0;32mI (240) app_init: Project name:     blink[0m
+[0;32mI (245) app_init: App version:      1[0m
+[0;32mI (249) app_init: Compile time:     Oct 21 2024 17:45:48[0m
+[0;32mI (255) app_init: ELF file SHA256:  f9c5d2948...[0m
+[0;32mI (261) app_init: ESP-IDF:          v5.3.1[0m
+D (265) cpu_start: calling init function: 0x400d0fbc on core: 0[0m
+[0;32mI (271) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (276) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (281) efuse_init: Chip rev:         v3.1[0m
+D (286) cpu_start: calling init function: 0x400d285c on core: 0[0m
+D (292) memory_layout: Checking 9 reserved memory ranges:[0m
+D (297) memory_layout: Reserved memory range 0x3ff82000 - 0x3ff82000[0m
+D (304) memory_layout: Reserved memory range 0x3ffae000 - 0x3ffae6e0[0m
+D (310) memory_layout: Reserved memory range 0x3ffb0000 - 0x3ffb2c90[0m
+D (317) memory_layout: Reserved memory range 0x3ffe0000 - 0x3ffe0440[0m
+D (323) memory_layout: Reserved memory range 0x3ffe3f20 - 0x3ffe4350[0m
+D (329) memory_layout: Reserved memory range 0x40070000 - 0x40078000[0m
+D (336) memory_layout: Reserved memory range 0x40078000 - 0x40080000[0m
+D (342) memory_layout: Reserved memory range 0x40080000 - 0x4008cac0[0m
+D (349) memory_layout: Reserved memory range 0x50001fe8 - 0x50002000[0m
+D (355) memory_layout: Building list of available memory regions:[0m
+D (361) memory_layout: Available memory region 0x3ffae6e0 - 0x3ffb0000[0m
+D (368) memory_layout: Available memory region 0x3ffb2c90 - 0x3ffb8000[0m
+D (374) memory_layout: Available memory region 0x3ffb8000 - 0x3ffc0000[0m
+D (381) memory_layout: Available memory region 0x3ffc0000 - 0x3ffc2000[0m
+D (388) memory_layout: Available memory region 0x3ffc2000 - 0x3ffc4000[0m
+D (394) memory_layout: Available memory region 0x3ffc4000 - 0x3ffc6000[0m
+D (401) memory_layout: Available memory region 0x3ffc6000 - 0x3ffc8000[0m
+D (407) memory_layout: Available memory region 0x3ffc8000 - 0x3ffca000[0m
+D (414) memory_layout: Available memory region 0x3ffca000 - 0x3ffcc000[0m
+D (421) memory_layout: Available memory region 0x3ffcc000 - 0x3ffce000[0m
+D (427) memory_layout: Available memory region 0x3ffce000 - 0x3ffd0000[0m
+D (434) memory_layout: Available memory region 0x3ffd0000 - 0x3ffd2000[0m
+D (440) memory_layout: Available memory region 0x3ffd2000 - 0x3ffd4000[0m
+D (447) memory_layout: Available memory region 0x3ffd4000 - 0x3ffd6000[0m
+D (454) memory_layout: Available memory region 0x3ffd6000 - 0x3ffd8000[0m
+D (460) memory_layout: Available memory region 0x3ffd8000 - 0x3ffda000[0m
+D (467) memory_layout: Available memory region 0x3ffda000 - 0x3ffdc000[0m
+D (473) memory_layout: Available memory region 0x3ffdc000 - 0x3ffde000[0m
+D (480) memory_layout: Available memory region 0x3ffde000 - 0x3ffe0000[0m
+D (487) memory_layout: Available memory region 0x3ffe0440 - 0x3ffe3f20[0m
+D (493) memory_layout: Available memory region 0x3ffe4350 - 0x3ffe8000[0m
+D (500) memory_layout: Available memory region 0x3ffe8000 - 0x3fff0000[0m
+D (506) memory_layout: Available memory region 0x3fff0000 - 0x3fff8000[0m
+D (513) memory_layout: Available memory region 0x3fff8000 - 0x3fffc000[0m
+D (520) memory_layout: Available memory region 0x3fffc000 - 0x40000000[0m
+D (526) memory_layout: Available memory region 0x4008cac0 - 0x4008e000[0m
+D (533) memory_layout: Available memory region 0x4008e000 - 0x40090000[0m
+D (539) memory_layout: Available memory region 0x40090000 - 0x40092000[0m
+D (546) memory_layout: Available memory region 0x40092000 - 0x40094000[0m
+D (553) memory_layout: Available memory region 0x40094000 - 0x40096000[0m
+D (559) memory_layout: Available memory region 0x40096000 - 0x40098000[0m
+D (566) memory_layout: Available memory region 0x40098000 - 0x4009a000[0m
+D (572) memory_layout: Available memory region 0x4009a000 - 0x4009c000[0m
+D (579) memory_layout: Available memory region 0x4009c000 - 0x4009e000[0m
+D (586) memory_layout: Available memory region 0x4009e000 - 0x400a0000[0m
+[0;32mI (592) heap_init: Initializing. RAM available for dynamic allocation:[0m
+D (600) heap_init: New heap initialised at 0x3ffae6e0[0m
+[0;32mI (605) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+D (611) heap_init: New heap initialised at 0x3ffb2c90[0m
+[0;32mI (616) heap_init: At 3FFB2C90 len 0002D370 (180 KiB): DRAM[0m
+[0;32mI (622) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (628) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+D (635) heap_init: New heap initialised at 0x4008cac0[0m
+[0;32mI (640) heap_init: At 4008CAC0 len 00013540 (77 KiB): IRAM[0m
+D (646) cpu_start: calling init function: 0x400d3aa0 on core: 0[0m
+D (652) cpu_start: calling init function: 0x400d3600 on core: 0[0m
+D (658) cpu_start: calling init function: 0x400d1114 on core: 0[0m
+D (664) intr_alloc: Connected src 46 to int 1 (cpu 0)[0m
+D (669) cpu_start: calling init function: 0x400d1120 on core: 0[0m
+D (675) cpu_start: calling init function: 0x400d4bd0 on core: 0[0m
+D (681) cpu_start: calling init function: 0x400d5584 on core: 0[0m
+D (687) cpu_start: calling init function: 0x400d366c on core: 0[0m
+D (693) cpu_start: calling init function: 0x400d39d0 on core: 0[0m
+D (699) cpu_start: calling init function: 0x400d112c on core: 0[0m
+D (705) spi_flash: trying chip: issi[0m
+D (709) spi_flash: trying chip: gd[0m
+D (712) spi_flash: trying chip: mxic[0m
+D (716) spi_flash: trying chip: winbond[0m
+D (720) spi_flash: trying chip: generic[0m
+[0;32mI (724) spi_flash: detected chip: generic[0m
+[0;32mI (728) spi_flash: flash io: dio[0m
+[0;33mW (732) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+D (745) cpu_start: calling init function: 0x400d1048 on core: 0[0m
+D (751) cpu_start: calling init function: 0x400850f0[0m
+D (756) cpu_start: calling init function: 0x400d20cc[0m
+D (762) cpu_start: calling init function: 0x400d16d0[0m
+D (767) cpu_start: calling init function: 0x400d1150 on core: 0[0m
+D (773) intr_alloc: Connected src 24 to int 2 (cpu 0)[0m
+D (778) app_start: Starting scheduler on CPU0[0m
+[0;32D (782) intr_alloc: Connected src 25 to int 1 (cpu 1)[0m
+D (782) app_start: Starting scheduler on CPU1[0m
+mI (782) main_task: Started on CPU0[0m
+D (802) heap_init: New heap initialised at 0x3ffe0440[0m
+D (802) heap_init: New heap initialised at 0x3ffe4350[0m
+D (802) intr_alloc: Connected src 16 to int 3 (cpu 0)[0m
+[0;32mI (802) main_task: Calling app_main()[0m
+[0;32mI (812) example: Example configured to blink GPIO LED![0m
+[0;32mI (812) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (822) example: Turning the LED OFF![0m
+[0;32mI (1832) example: Turning the LED ON![0m
+[0;32mI (2832) example: Turning the LED OFF![0m
+[0;32mI (3832) example: Turning the LED ON![0m
+[0;32mI (4832) example: Turning the LED OFF![0m
+[0;32mI (5832) example: Turning the LED ON![0m
+[0;32mI (6832) example: Turning the LED OFF![0m
+[0;32mI (7832) example: Turning the LED ON![0m
+[0;32mI (8832) example: Turning the LED OFF![0m
+[0;32mI (9832) example: Turning the LED ON![0m
+[0;32mI (10832) example: Turning the LED OFF![0m
+[0;32mI (11832) example: Turning the LED ON![0m
+[0;32mI (12832) example: Turning the LED OFF![0m
+[0;32mI (13832) example: Turning the LED ON![0m
+[0;32mI (14832) example: Turning the LED OFF![0m
+[0;32mI (15832) example: Turning the LED ON![0m
+[0;32mI (16832) example: Turning the LED OFF![0m
+[0;32mI (17832) example: Turning the LED ON![0m
+[0;32mI (18832) example: Turning the LED OFF![0m
+[0;32mI (19832) example: Turning the LED ON![0m
+[0;32mI (20832) example: Turning the LED OFF![0m
+[0;32mI (21832) example: Turning the LED ON![0m
+[0;32mI (22832) example: Turning the LED OFF![0m
+[0;32mI (23832) example: Turning the LED ON![0m
+[0;32mI (24832) example: Turning the LED OFF![0m
+[0;32mI (25832) example: Turning the LED ON![0m
+[0;32mI (26832) example: Turning the LED OFF![0m
+[0;32mI (27832) example: Turning the LED ON![0m
+[0;32mI (28832) example: Turning the LED OFF![0m
+[0;32mI (29832) example: Turning the LED ON![0m
+[0;32mI (30832) example: Turning the LED OFF![0m
+[0;32mI (31832) example: Turning the LED ON![0m
+[0;32mI (32832) example: Turning the LED OFF![0m
+[0;32mI (33832) example: Turning the LED ON![0m
+[0;32mI (34832) example: Turning the LED OFF![0m
+[0;32mI (35832) example: Turning the LED ON![0m
+[0;32mI (36832) example: Turning the LED OFF![0m
+[0;32mI (37832) example: Turning the LED ON![0m
+[0;32mI (38832) example: Turning the LED OFF![0m
+[0;32mI (39832) example: Turning the LED ON![0m
+[0;32mI (40832) example: Turning the LED OFF![0m
+[0;32mI (41832) example: Turning the LED ON![0m
+[0;32mI (42832) example: Turning the LED OFF![0m
+[0;32mI (43832) example: Turning the LED ON![0m
+[0;32mI (44832) example: Turning the LED OFF![0m
+[0;32mI (45832) example: Turning the LED ON![0m
+[0;32mI (46832) example: Turning the LED OFF![0m
+[0;32mI (47832) example: Turning the LED ON![0m
+[0;32mI (48832) example: Turning the LED OFF![0m
+[0;32mI (49832) example: Turning the LED ON![0m
+[0;32mI (50832) example: Turning the LED OFF![0m
+[0;32mI (51832) example: Turning the LED ON![0m
+[0;32mI (52832) example: Turning the LED OFF![0m
+[0;32mI (53832) example: Turning the LED ON![0m
+[0;32mI (54832) example: Turning the LED OFF![0m
+[0;32mI (55832) example: Turning the LED ON![0m
+[0;32mI (56832) example: Turning the LED OFF![0m
+[0;32mI (57832) example: Turning the LED ON![0m
+[0;32mI (58832) example: Turning the LED OFF![0m
+[0;32mI (59832) example: Turning the LED ON![0m
+[0;32mI (60832) example: Turning the LED OFF![0m
+[0;32mI (61832) example: Turning the LED ON![0m
+[0;32mI (62832) example: Turning the LED OFF![0m
+[0;32mI (63832) example: Turning the LED ON![0m
+[0;32mI (64832) example: Turning the LED OFF![0m
+[0;32mI (65832) example: Turning the LED ON![0m
+[0;32mI (66832) example: Turning the LED OFF![0m
+[0;32mI (67832) example: Turning the LED ON![0m
+[0;32mI (68832) example: Turning the LED OFF![0m
+[0;32mI (69832) example: Turning the LED ON![0m
+[0;32mI (70832) example: Turning the LED OFF![0m
+[0;32mI (71832) example: Turning the LED ON![0m
+[0;32mI (72832) example: Turning the LED OFF![0m
+[0;32mI (73832) example: Turning the LED ON![0m
+[0;32mI (74832) example: Turning the LED OFF![0m
+[0;32mI (75832) example: Turning the LED ON![0m
+[0;32mI (76832) example: Turning the LED OFF![0m
+[0;32mI (77832) example: Turning the LED ON![0m
+[0;32mI (78832) example: Turning the LED OFF![0m
+[0;32mI (79832) example: Turning the LED ON![0m
+[0;32mI (80832) example: Turning the LED OFF![0m
+[0;32mI (81832) example: Turning the LED ON![0m
+[0;32mI (82832) example: Turning the LED OFF![0m
+[0;32mI (83832) example: Turning the LED ON![0m
+[0;32mI (84832) example: Turning the LED OFF![0m
+[0;32mI (85832) example: Turning the LED ON![0m

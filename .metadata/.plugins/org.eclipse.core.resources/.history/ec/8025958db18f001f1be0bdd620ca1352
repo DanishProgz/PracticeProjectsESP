@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include "arch/sys_arch.h"
+#include "esp_log.h"
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "portmacro.h"
+
+void app_main(void)
+{
+    while (true) {
+		ESP_LOGD("LOG", "This is a DEbug");
+		vTaskDelay(1000 / portTICK_PERIOD_MS);
+		sys_delay_ms(1000);
+    }
+}

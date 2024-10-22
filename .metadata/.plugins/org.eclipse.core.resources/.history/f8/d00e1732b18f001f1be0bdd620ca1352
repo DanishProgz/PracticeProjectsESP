@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include "arch/sys_arch.h"
+#include "esp_log.h"
+
+
+void app_main(void)
+{
+    while (true) {
+		ESP_LOGD("LOG", "This is a DEbug");
+		sys_delay_ms(1000);
+    }
+}
